@@ -21,7 +21,7 @@ const Home = () => {
     formData.append('file', file);
     
     try {
-      const response = await axios.post('http://localhost:5000/api/docs/upload', formData, {
+      const response = await axios.post('https://legal-document-analysis-system-g6tz.onrender.com/api/docs/upload', formData, {
         onUploadProgress: (progressEvent) => {
           const percent = Math.round((progressEvent.loaded * 100) / progressEvent.total);
           setUploadProgress(percent);

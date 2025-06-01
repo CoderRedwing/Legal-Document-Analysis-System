@@ -83,7 +83,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000/api/docs',
+  baseURL: process.env.REACT_APP_API_URL || 'https://legal-document-analysis-system-g6tz.onrender.com/api/docs',
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json'
